@@ -1,8 +1,5 @@
-name = input("Please enter name:")
-age = int(input("How old are you?"))
-
-if 18 <= age < 31:
-    print("Welcome to club 18-30 holiday, {}".format(name))
-
-else:
-    print("I'm sorry, our holiday are only for cool people")
+with open("sample.txt", 'a') as tables:
+    for i in range (1, 13):
+        for j in range (1, 13):
+            print("{1:>2} times {0} is {2}".format(i, j, i*j), file=tables)
+        print("-" * 20, file=tables)
