@@ -1,12 +1,11 @@
-a = b = c = 12
+done = "Well done, you have finished your drawing"
+from turtle import *
 
-print(a, b, c)
+forward(150)
+right(250)
+circle(75)
+forward(150)
 
-a, b = 12, 13
 
-print(a, b)
-
-a, b = b, a
-
-print("a is {}".format(a))
-print("b is {}".format(b))
+done()
+print(done)
